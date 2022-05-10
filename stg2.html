@@ -1,0 +1,18 @@
+<html>
+<head>
+	<link rel="stylesheet" href="stg.css">
+<script language="javascript">
+history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+		history.pushState(null, null, document.URL);
+});
+function go()
+{
+	location.replace('room2.html');
+}
+</script>
+</head>
+<body background="./img/stg.jpg">
+	<div><img src="./img/text.gif"  onclick="go()"></div>
+</body>
+</html>
